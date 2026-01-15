@@ -26,8 +26,7 @@ public class Lox {
             byte[] bytes = Files.readAllBytes(Paths.get(path));
             run(new String(bytes, Charset.defaultCharset()));
         }
-        catch(IOException e)
-        {
+        catch(IOException e){
             System.err.println("[Error] Error during reading file");
         }
 
